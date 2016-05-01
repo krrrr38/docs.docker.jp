@@ -357,7 +357,7 @@ IPtables を使うことで（というよりも、インターフェースに�
 
 * 調査したいコンテナに入っている、あらゆる PID を探し出します
 * ``/var/run/netns/<何らかの名前>`` から ``/proc/<thepid>/ns/net`` へのシンボリック・リンクを作成します。
-* ``ip netns exec <何らかの名前>`` ....`` を実行します。
+* ``ip netns exec <何らかの名前> ....`` を実行します。
 
 .. Please review Enumerating Cgroups to learn how to find the cgroup of a process running in the container of which you want to measure network usage. From there, you can examine the pseudo-file named tasks, which contains the PIDs that are in the control group (i.e., in the container). Pick any one of them.
 

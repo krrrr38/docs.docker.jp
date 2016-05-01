@@ -82,7 +82,7 @@ SSH デーモン用サービスの Docker 化
 
 .. And now you can ssh as root on the container’s IP address (you can find it with docker inspect) or on port 49154 of the Docker daemon’s host IP address (ip address or ifconfig can tell you that) or localhost if on the Docker daemon host:
 
-それから、コンテナに 対して ``root`` として SSH できます。接続先は、 IP アドレス（これは ``docker inspect`` で確認できます ）か、Docker デーモンの IP アドレス（ ``ip address`` や ``ifconfig`` で確認できます ）上のポート ``49154``か、Docker デーモンのホスト ``localhost`` です。 
+それから、コンテナに 対して ``root`` として SSH できます。接続先は、 IP アドレス（これは ``docker inspect`` で確認できます ）か、Docker デーモンの IP アドレス（ ``ip address`` や ``ifconfig`` で確認できます ）上のポート ``49154`` か、Docker デーモンのホスト ``localhost`` です。
 
 .. code-block:: bash
 

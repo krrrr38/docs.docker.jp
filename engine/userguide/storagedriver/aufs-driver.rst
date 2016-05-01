@@ -171,7 +171,7 @@ AUFS ストレージ・ドライバを使えるのは、AUFS がインストー�
 ローカルのストレージと AUFS
 ==============================
 
-As the docker daemon runs with the AUFS driver, the driver stores images and containers on within the Docker host’s local storage area in the /var/lib/docker/aufs directory.
+.. As the docker daemon runs with the AUFS driver, the driver stores images and containers on within the Docker host’s local storage area in the /var/lib/docker/aufs directory.
 
 ``docker daemon`` を AUFS ドライバで実行すると、ドライバは Docker ホスト上のローカル・ストレージ領域である ``/var/lib/docker/aufs`` 内に、イメージとコンテナを保管します。
 
@@ -194,7 +194,7 @@ As the docker daemon runs with the AUFS driver, the driver stores images and con
 
 .. Inspecting the contents of the file relating to the top layer of the image shows the three image layers below it. They are listed in the order they are stacked.
 
-..イメージの最上位レイヤのファイル内容を調べると、下層にある３つのイメージ・レイヤに関する情報が含まれています。これらは積み重ねられた順番で並べられています。
+イメージの最上位レイヤのファイル内容を調べると、下層にある３つのイメージ・レイヤに関する情報が含まれています。これらは積み重ねられた順番で並べられています。
 
 .. The command below shows the contents of a metadata file in /var/lib/docker/aufs/layers/ that lists the three directories that are stacked below it in the union mount. Remember, these directory names do no map to image layer IDs with Docker 1.10 and higher.
 

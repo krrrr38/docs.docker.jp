@@ -399,7 +399,7 @@ Docker オプションの設定を変更するには：
 ログ
 ----------
 
-systemd has its own logging system called the journal. The logs for the docker daemon can be viewed using journalctl -u docker
+.. systemd has its own logging system called the journal. The logs for the docker daemon can be viewed using journalctl -u docker
 
 systemd は自身で journal と呼ばれるロギング・システムを持っています。 ``docker`` デーモンのログを表示するには ``journalctl -u docker`` を使います。
 

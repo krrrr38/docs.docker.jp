@@ -209,7 +209,7 @@ Docker は ``#`` で *始まる* 行をコメントとみなします。 ``#`` �
 
 ..    ONBUILD (when combined with one of the supported instructions above)
 
-* ``ONBLIUD`` （上記の命令と組みあわせて使う場合にサポートされます）
+* ``ONBUILD`` （上記の命令と組みあわせて使う場合にサポートされます）
 
 ..    Note: prior to 1.4, ONBUILD instructions did NOT support environment variable, even when combined with any of the instructions listed above.
 
@@ -391,7 +391,7 @@ RUN には２つの形式があります。
 ..  RUN <command> (shell form, the command is run in a shell - /bin/sh -c)
     RUN ["executable", "param1", "param2"] (exec form)
 
-* ``RUN <コマンド>``（シェル形式、コマンドをシェル ``/bin/sh -c`` で実行する）
+* ``RUN <コマンド>`` （シェル形式、コマンドをシェル ``/bin/sh -c`` で実行する）
 * ``RUN ["実行バイナリ", "パラメータ１", "パラメータ２"]`` （ *exec* 形式）
 
 .. The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile.
@@ -815,7 +815,7 @@ COPY has two forms:
 COPY は２つの形式があります。
 
 ..    COPY <src>... <dest>
-    COPY ["<src>",... "<dest>"] (this form is required for paths containing whitespace)
+..    COPY ["<src>",... "<dest>"] (this form is required for paths containing whitespace)
 
 .. code-block:: bash
 
@@ -1425,7 +1425,7 @@ Dockerfile の作者は、オプションで ``ARG`` 命令のデフォルト値
 
 .. code-block:: bash
 
-.. $ docker build Dockerfile
+   $ docker build Dockerfile
 
 .. Using this Dockerfile example, CONT_IMG_VER is still persisted in the image but its value would be v1.0.0 as it is the default set in line 3 by the ENV instruction.
 

@@ -419,7 +419,7 @@ Docker バージョン 1.10 より低いバージョンまでは、各レイヤ�
    :scale: 60%
    :alt: レイヤの共有
 
-The docker history command also shows the size of each image layer. As you can see, the 94e6b7d2c720 layer is only consuming 12 Bytes of disk space. This means that the changed-ubuntu image we just created is only consuming an additional 12 Bytes of disk space on the Docker host - all layers below the 94e6b7d2c720 layer already exist on the Docker host and are shared by other images.
+.. The docker history command also shows the size of each image layer. As you can see, the 94e6b7d2c720 layer is only consuming 12 Bytes of disk space. This means that the changed-ubuntu image we just created is only consuming an additional 12 Bytes of disk space on the Docker host - all layers below the 94e6b7d2c720 layer already exist on the Docker host and are shared by other images.
 
 また、``docker history`` コマンドは各イメージ・レイヤのサイズも表示します。 ``94e6b7d2c720`` は 12 バイトのディスク容量です。つまり、 ``changed-ubuntu`` は Docker ホスト上の 12 バイトのディスク容量しか消費しません。これは、 ``94e6b7d2c720`` よりも下層のレイヤにあたるものは Docker ホスト上に存在しており、これらは ``changed-ubuntu`` イメージとして共有されているからです。
 

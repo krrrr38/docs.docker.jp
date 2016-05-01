@@ -73,7 +73,7 @@ Node.js アプリの作成
    app.listen(PORT);
    console.log('Running on http://localhost:' + PORT);
 
-In the next steps, we’ll look at how you can run this app inside a CentOS container using Docker. First, you’ll need to build a Docker image of your app.
+.. In the next steps, we’ll look at how you can run this app inside a CentOS container using Docker. First, you’ll need to build a Docker image of your app.
 
 次のステップでは、Docker が CentOS コンテナの中で、どのようにこのアプリを実行するかを理解していきます。まず、自分のアプリを動かす Docker イメージを作成します。
 
@@ -236,7 +236,7 @@ Node.js アプリを作りたいため、CentOS イメージ上に Node.js と n
 テスト
 ==========
 
-To test your app, get the port of your app that Docker mapped:
+.. To test your app, get the port of your app that Docker mapped:
 
 アプリケーションをテストするには、Docker でアプリケーションにポートを割り当てます。
 
